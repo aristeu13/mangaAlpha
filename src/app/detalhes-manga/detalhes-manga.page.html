@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-button routerLink="/home" routerDirection="backward">
+        <ion-icon name="arrow-back" style="font-size: 20px;"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>detalhesManga</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="content">
+  <div class="body">
+    <div class="div-titulo">
+      <h2>{{data.attributes.canonicalTitle}}</h2>
+    </div>
+    <img [src]="data.attributes.posterImage.original" />
+    <div class="div-titulo">
+      <span class="fonte">{{data.attributes.synopsis}}</span>
+    </div>
+  </div>
+  <ion-list class="lista">
+    <ion-item class="item" *ngFor="let capitulo of capitulos;let i of index" (click)="leitor(capitulo)">
+      <span>Capítulo {{capitulo.cap}}</span>
+    </ion-item>
+  </ion-list>
+</ion-content>

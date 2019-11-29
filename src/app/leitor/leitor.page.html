@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-button routerLink="/home" routerDirection="backward">
+        <ion-icon name="arrow-back" style="font-size: 20px;"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>leitor</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img [src]="img" (click)="prox()"/>
+</ion-content>

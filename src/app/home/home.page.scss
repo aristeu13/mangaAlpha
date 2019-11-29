@@ -1,0 +1,55 @@
+.welcome-card img {
+  max-height: 35vh;
+  overflow: hidden;
+}
+
+
+.header {
+  //--background: darkgray;
+}
+
+.body{
+  //--background: url(../../assets/background.jpg);
+  --background: #565656;
+}
+
+.item{
+  --background: #565656;
+}
+
+.div-input{
+  display: -webkit-box;
+  align-items: center;
+  justify-content: center;
+}
+
+.input{
+  margin-top: 5%;
+  width: 80%;
+  border: black 1px solid;
+}
+
+.lista{
+  padding-top: 0% !important;
+  padding-bottom: 0% !important;
+}
+
+.imgs{
+  width: max-content;
+}
+
+.coluna{
+  padding: 5% !important;
+  width: 50%;
+}
+
+.titulo{
+  margin-top: 0px !important;
+  justify-content: baseline;
+}
+
+.fonte{
+  display: flex;
+  color: darkgray;
+  text-align: justify !important;
+}
